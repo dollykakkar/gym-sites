@@ -12,6 +12,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Registration from './Components/Registration';
 import Plan from './Components/Plan';
+import { Homepage } from "./Compo/Homepage";
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>
+        <Route path='/' element={<Homepage/>}/>
           <Route path='/admin' element={<AdminInfo/>}/>
           <Route path='/payment' element={<Payment/>}/>
           <Route path='/members' element={<ActiveMember/>}/>
