@@ -18,12 +18,12 @@ function App() {
     <Router>
     {/* <AdminInfo/> */}
     {/* <Payment/> */}
-    <SideBar/>
+    {/* <SideBar/> */}
     {/* <AddEquipment/> */}
     {/* <ActiveMember/> */}
     {/* <ActiveCoach/> */}
     {/* <SalesReport/> */}
-    {/* <Login/> */}
+    <Login/>
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>

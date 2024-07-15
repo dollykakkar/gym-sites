@@ -1,7 +1,6 @@
 import React from 'react'
 import img2 from './img/img2png.png'
 import notifi from './img/notification.png'
-import SideBar from './SideBar'
 import search from './img/Vector.png' 
 import arrow from './img/down.png'
 import img from './img/PencilSquare.png'
