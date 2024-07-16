@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import {BrowserRouter as Router ,Route,Routes,Link} from "react-router-dom";
 import SideBar from './Components/SideBar';
 import Payment from './Components/Payment';
@@ -24,7 +22,7 @@ function App() {
     {/* <ActiveMember/> */}
     {/* <ActiveCoach/> */}
     {/* <SalesReport/> */}
-    <Login/>
+    {/* <Login/> */}
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>
