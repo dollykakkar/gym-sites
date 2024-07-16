@@ -38,7 +38,7 @@ export const Homepage = () => {
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
                 <div className="h-[76px] flex">
-                    <img src={logo} className="h-[100%]" />
+                    <img src={logo} alt='img' className="h-[100%]" />
                     <h1 className="text-2xl font-semibold hidden lg:inline-block">
                         STAMINA
                         <br />
@@ -82,7 +82,7 @@ export const Homepage = () => {
                     </Link>
                 </div>
                 <div className="order-1 md:order-2 w-96">
-                    <img src={secondSecImg} className="" />
+                    <img src={secondSecImg} alt='img'/>
                 </div>
             </div>
 
@@ -98,7 +98,7 @@ export const Homepage = () => {
                 </div>
                 <div className="w-full flex">
                     <div className="hidden md:inline-block w-80 place-self-end">
-                        <img src={thirdsecPerson} />
+                        <img src={thirdsecPerson} alt='img' />
                     </div>
                     <div className="flex flex-col justify-center md:justify-start items-center md:items-start">
                         <h3 className="xs:text-wrap md:w-96 text-[#FFFF7D] text-center  md:text-left px-6 md:px-0 font-semibold">
@@ -135,7 +135,7 @@ export const Homepage = () => {
                     </div>
 
                     <div className="hidden md:inline-block absolute place-self-end w-96 right-0 bottom-0 -z-10 ">
-                        <img src={thirdsecBgimg} className=" opacity-30" />
+                        <img src={thirdsecBgimg} alt='img' className=" opacity-30" />
                     </div>
                 </div>
             </div>
@@ -147,8 +147,8 @@ export const Homepage = () => {
             */}
 
             <div className="w-full grid p-[6vmax] items-center gap-10 bg-[#ECE9E9] relative">
-                <img src={fourthSecVecter} className="absolute z-0" />
-                <img src={fourthSecVecter2} className=" hidden lg:inline-block absolute top-56 left-40 z-0" />
+                <img src={fourthSecVecter} alt='img' className="absolute z-0" />
+                <img src={fourthSecVecter2} alt='img' className=" hidden lg:inline-block absolute top-56 left-40 z-0" />
                 <h2 className="text-[4vmax]  place-self-center lg:place-self-end">JOIN OUR MEMBERSHIP</h2>
                 <h2 className="text-[4vmax] hidden lg:block z-10">
                     Our <span className="lg:text-white">Plan</span>
@@ -211,7 +211,7 @@ export const Homepage = () => {
                 <div className=" w-full flex flex-col md:flex-row items-center gap-[14vmax] justify-around pt-24 p-8">
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]  rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach} className="h-full" />
+                            <img src={coach} alt='img' className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach John
@@ -219,7 +219,7 @@ export const Homepage = () => {
                     </div>
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]    rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach2} className="h-full" />
+                            <img src={coach2} alt='img' className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach Martell
@@ -227,7 +227,7 @@ export const Homepage = () => {
                     </div>
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]   rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach} className="h-full" />
+                            <img src={coach} alt='img' className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach Ansel
@@ -243,7 +243,7 @@ export const Homepage = () => {
             <div className="w-full p-10" style={{ backgroundImage: `url(${lastSecBgImg})` }}>
                 <div className="flex items-center justify-center">
                     <div className="hidden md:inline-block">
-                        <img src={map} />
+                        <img src={map} alt='img' />
                     </div>
                     <div>
                         <div className="text-[#1a1363] text-4xl text-wrap font-semibold text-center ">
@@ -302,9 +302,9 @@ export const Homepage = () => {
                     <div className="hidden lg:inline-block">
                         <div className="text-[#DEBA3B] text-3xl font-semibold mt-6 pl-6">Customer’s Progress </div>
                         <div className="flex h-64">
-                            <img src={progress2} />
-                            <img src={progress3} />
-                            <img src={progress1} />
+                            <img src={progress2} alt='img'/>
+                            <img src={progress3} alt='img'/>
+                            <img src={progress1} alt='img'/>
                         </div>
                     </div>
                 </div>
