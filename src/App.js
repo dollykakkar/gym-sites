@@ -11,7 +11,6 @@ import Register from './Components/Register';
 import Registration from './Components/Registration';
 import Plan from './Components/Plan';
 import { Homepage } from "./Compo/Homepage";
-import { Counter } from "./Compo/Counter";
 function App() {
   return (
     <>
