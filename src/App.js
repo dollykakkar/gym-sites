@@ -1,4 +1,4 @@
-import {BrowserRouter as Router ,Route,Routes,Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import SideBar from './Components/SideBar';
 import Payment from './Components/Payment';
 import AdminInfo from './Components/AdminInfo';
@@ -11,34 +11,34 @@ import Register from './Components/Register';
 import Registration from './Components/Registration';
 import Plan from './Components/Plan';
 import { Homepage } from "./Compo/Homepage";
+import { Counter } from "./Compo/Counter";
 function App() {
   return (
-    <div className="App">
-    <Router>
-    {/* <AdminInfo/> */}
-    {/* <Payment/> */}
-    {/* <SideBar/> */}
-    {/* <AddEquipment/> */}
-    {/* <ActiveMember/> */}
-    {/* <ActiveCoach/> */}
-    {/* <SalesReport/> */}
-    {/* <Login/> */}
-    {/* <Register/> */}
-    {/* <Registration/> */}
+    <>
+      <Router>
+        {/* <AdminInfo/> */}
+        {/* <Payment/> */}
+        {/* <SideBar/> */}
+        {/* <AddEquipment/> */}
+        {/* <ActiveMember/> */}
+        {/* <ActiveCoach/> */}
+        {/* <SalesReport/> */}
+        {/* <Login/> */}
+        {/* <Register/> */}
+        {/* <Registration/> */}
         <Routes>
-        <Route path='/' element={<Homepage/>}/>
-          <Route path='/admin' element={<AdminInfo/>}/>
-          <Route path='/payment' element={<Payment/>}/>
-          <Route path='/members' element={<ActiveMember/>}/>
-          <Route path='/coach' element={<ActiveCoach/>}/>
-          <Route path='/equipment' element={<AddEquipment/>}/>
-          <Route path='/sales' element={<SalesReport/>}/>
-          <Route path='/register' element={<Registration/>}/>
-          <Route path='/plan' element={<Plan/>}/>
-          {/* <Route path='/' element={}/> */}
+          <Route path='/' element={<Homepage />} />
+          <Route path='/admin' element={<AdminInfo />} />
+          <Route path='/payment' element={<Payment />} />
+          <Route path='/members' element={<ActiveMember/>} />
+          <Route path='/coach' element={<ActiveCoach />} />
+          <Route path='/equipment' element={<AddEquipment />} />
+          <Route path='/sales' element={<SalesReport/>} />
+          <Route path='/register' element={<Registration />} />
+          <Route path='/plan' element={<Plan />} />
         </Routes>
-    </Router>
-    </div>
+      </Router>
+    </>
   );
 }
 
