@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Img/logoWhite.png";
@@ -34,11 +35,11 @@ export const Homepage = () => {
     }
 
     return (
-        <div className="w-full">
+        <div className="w-full ">
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
                 <div className="h-[76px] flex">
-                    <img src={logo} alt='img' className="h-[100%]" />
+                    <img src={logo} className="h-[100%]" />
                     <h1 className="text-2xl font-semibold hidden lg:inline-block">
                         STAMINA
                         <br />
@@ -77,12 +78,12 @@ export const Homepage = () => {
                             <span className="text-[#FFFF7D]"> Come Join Us! </span>
                         </h3>
                     </div>
-                    <Link className="px-6 py-3 text-lg font-bold bg-[#FFFADF] rounded-[30px]">
+                    <Link className="px-6 py-3 text-lg font-bold bg-[#FFFADF] hover:bg-[#f3e595] rounded-[30px]">
                         Learn More
                     </Link>
                 </div>
                 <div className="order-1 md:order-2 w-96">
-                    <img src={secondSecImg} alt='img'/>
+                    <img src={secondSecImg} className="" />
                 </div>
             </div>
 
@@ -92,16 +93,16 @@ export const Homepage = () => {
             <div className="w-full relative md:h-[710px] bg-no-repeat bg-right-bottom bg-gradient-to-r from-[#1A1363] via-[#1A1363] to-[#1a13637a] grid ">
                 <div className="flex flex-col items-center text-white">
                     <span className="text-lg">About</span>
-                    <span className="text-[3vmax] tracking-widest font-semibold">
+                    <span className="text-[4vmax] md:text-[3vmax] text-center tracking-widest font-bold">
                         STAMINA GYM FOR MAN & WOMAN
                     </span>
                 </div>
                 <div className="w-full flex">
                     <div className="hidden md:inline-block w-80 place-self-end">
-                        <img src={thirdsecPerson} alt='img' />
+                        <img src={thirdsecPerson} />
                     </div>
-                    <div className="flex flex-col justify-center md:justify-start items-center md:items-start">
-                        <h3 className="xs:text-wrap md:w-96 text-[#FFFF7D] text-center  md:text-left px-6 md:px-0 font-semibold">
+                    <div className="flex flex-col mt-6 justify-center md:justify-start items-center md:items-start">
+                        <h3 className="text-sm xs:text-lg xs:text-wrap md:w-96 text-[#FFFF7D] text-center  md:text-left px-6 md:px-0 font-semibold">
                             Stamina Gym Fitness Center provides proper training and
                             conditioning for members who want to improve and transform their
                             body with Program depend on the body composition.
@@ -109,24 +110,24 @@ export const Homepage = () => {
                         <h3 className="text-[2.7vmax] font-semibold text-white my-6">
                             What we offer:
                         </h3>
-                        <div className="text-[#1A1363] flex gap-[3vmax] pb-6">
-                            <div className="w-[16vmax] h-[16vmax] rounded-3xl outline outline-[#1A1363] outline-8 -outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex justify-center items-center">
-                                <h1 className="text-[4vmax] font-bold">
+                        <div className="text-[#1A1363] flex gap-[1vmax] md:gap-[3vmax] pb-6">
+                            <div className="w-[12vmax] h-[12vmax]  xs:w-[14vmax] xs:h-[14vmax] rounded-3xl outline outline-[#1A1363] outline-4 md:outline-8 -outline-offset-[10px] md:-outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex justify-center items-center">
+                                <h1 className="text-[3vmax] xs:text-[4vmax] font-bold">
                                     &nbsp;24
                                     <br />
                                     /7 <span className="text-[2vmax] font-semibold">chat</span>
                                 </h1>
                             </div>
-                            <div className="w-[16vmax] h-[16vmax] rounded-3xl outline outline-[#1A1363] outline-8 -outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex justify-center items-center">
-                                <h1 className=" text-center text-[2.7vmax] font-bold">
+                            <div className="w-[12vmax] h-[12vmax]  xs:w-[14vmax] xs:h-[14vmax] rounded-3xl outline outline-[#1A1363] outline-4 md:outline-8 -outline-offset-[10px] md:-outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex justify-center items-center">
+                                <h1 className=" text-center text-[2vmax] xs:text-[2.7vmax] font-bold">
                                     1 on 1<br /> coching
                                 </h1>
                             </div>
-                            <div className="w-[16vmax] h-[16vmax] rounded-3xl outline outline-[#1A1363] outline-8 -outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex flex-col justify-center px-7">
+                            <div className="w-[12vmax] h-[12vmax]  xs:w-[14vmax] xs:h-[14vmax] rounded-3xl outline outline-[#1A1363] outline-4 md:outline-8 -outline-offset-[10px] md:-outline-offset-[15px] border-2 border-[#1A1363]  bg-white flex flex-col justify-center px-7">
                                 <span className="border-[1vmax] rounded-full w-[5vmax] h-[5vmax] flex justify-center items-center border-[#1A1363] place-self-end">
                                     <i class="fa-solid fa-heart text-[1.5vmax]"></i>
                                 </span>
-                                <h3 className="text-wrap text-[1.4vmax] font-semibold">
+                                <h3 className="text-wrap text-[1vmax] xs:text-[1.4vmax] font-semibold">
                                     Nutrition <br />
                                     Plan <br /> Guide
                                 </h3>
@@ -135,7 +136,7 @@ export const Homepage = () => {
                     </div>
 
                     <div className="hidden md:inline-block absolute place-self-end w-96 right-0 bottom-0 -z-10 ">
-                        <img src={thirdsecBgimg} alt='img' className=" opacity-30" />
+                        <img src={thirdsecBgimg} className=" opacity-30" />
                     </div>
                 </div>
             </div>
@@ -147,52 +148,52 @@ export const Homepage = () => {
             */}
 
             <div className="w-full grid p-[6vmax] items-center gap-10 bg-[#ECE9E9] relative">
-                <img src={fourthSecVecter} alt='img' className="absolute z-0" />
-                <img src={fourthSecVecter2} alt='img' className=" hidden lg:inline-block absolute top-56 left-40 z-0" />
-                <h2 className="text-[4vmax]  place-self-center lg:place-self-end">JOIN OUR MEMBERSHIP</h2>
+                <img src={fourthSecVecter} className="absolute z-0" />
+                <img src={fourthSecVecter2} className=" hidden lg:inline-block absolute top-56 left-40 z-0" />
+                <h2 className="text-[4vmax]  place-self-center text-center font-bold lg:place-self-end">JOIN OUR MEMBERSHIP</h2>
                 <h2 className="text-[4vmax] hidden lg:block z-10">
                     Our <span className="lg:text-white">Plan</span>
                 </h2>
-                <div className="grid grid-cols-2 gap-3  lg:grid-cols-5 text-xl text-white ">
-                    <div className="w-48 h-56 rounded-3xl  border-8 place-self-center border-[#1A1363] bg-white text-[#1a1363] flex flex-col justify-center items-center text-center relative z-10 gap-2">
-                        <i class="fa-solid fa-chess-pawn text-[80px]"></i>
+                <div className="grid grid-cols-2 gap-3  lg:grid-cols-5 text-lg xs:text-xl text-white ">
+                    <div className="w-32 h-36 xs:w-48 xs:h-56 rounded-3xl border-4 xs:border-8 place-self-center border-[#1A1363] bg-white text-[#1a1363] flex flex-col justify-center items-center text-center relative z-10 gap-2">
+                        <i class="fa-solid fa-chess-pawn text-5xl xs:text-[80px]"></i>
                         <h3 className="font-semibold">
                             Annual
                             <br />
                             Membership
                         </h3>
                     </div>
-                    <div className="w-48 h-56 rounded-3xl border-8 place-self-center border-white  bg-[#3E3E3E] relative flex flex-col justify-center items-center gap-4 lg:top-8">
-                        <i class="fa-solid fa-chess-knight text-5xl absolute top-4 right-4"></i>
-                        <h3 className=" text-5xl font-semibold leading-tight">
+                    <div className="w-32 h-36 xs:w-48 xs:h-56 rounded-3xl border-4 xs:border-8 place-self-center border-white  bg-[#3E3E3E] relative flex flex-col justify-center items-center gap-4 lg:top-8">
+                        <i class="fa-solid fa-chess-knight text-3xl xs:text-5xl absolute top-[9%] right-[9%]"></i>
+                        <h3 className="text-4xl xs:text-5xl font-semibold xs:leading-tight">
                             7<br />
                             Days
                         </h3>
-                        <span className="font-semibold">Weekly Rate</span>
+                        <span className="font-semibold -m-3">Weekly Rate</span>
                     </div>
-                    <div className="w-48 h-56 rounded-3xl border-8 place-self-center border-white bg-[#77749B] flex flex-col justify-center items-center gap-4 relative">
-                        <i class="fa-solid fa-chess-bishop text-5xl absolute top-4 right-4"></i>
-                        <h3 className="font-semibold text-5xl leading-tight">
+                    <div className="w-32 h-36 xs:w-48 xs:h-56 rounded-3xl border-4 xs:border-8 place-self-center border-white bg-[#77749B] flex flex-col justify-center items-center gap-4 relative">
+                        <i class="fa-solid fa-chess-bishop text-5xl absolute top-[9%] right-[9%]"></i>
+                        <h3 className="font-semibold text-4xl xs:text-5xl xs:leading-tight ">
                             1<br />
                             Month
                         </h3>
-                        <span className="font-semibold ">Monthly Rate</span>
+                        <span className="font-semibold -m-3">Monthly Rate</span>
                     </div>
-                    <div className="w-48 h-56 rounded-3xl border-8 place-self-center border-white bg-[#332F64] flex flex-col justify-center items-center gap-4 relative lg:top-8">
-                        <i class="fa-solid fa-chess-king text-5xl absolute top-4 right-4"></i>
-                        <h3 className="font-semibold text-5xl leading-tight">
+                    <div className="w-32 h-36 xs:w-48 xs:h-56 rounded-3xl border-4 xs:border-8 place-self-center border-white bg-[#332F64] flex flex-col justify-center items-center gap-4 relative lg:top-8">
+                        <i class="fa-solid fa-chess-king text-5xl absolute top-[9%] right-[9%]"></i>
+                        <h3 className="font-semibold text-4xl xs:text-5xl leading-tight">
                             6<br />
                             Month
                         </h3>
-                        <span className="font-semibold">Biannual Rate</span>
+                        <span className="font-semibold -m-3 ">Biannual Rate</span>
                     </div>
-                    <div className="w-48 h-56 rounded-3xl col-span-2 place-self-center lg:col-span-1 border-8 border-white bg-[#1A1363] flex flex-col justify-center items-center relative gap-4">
-                        <i class="fa-solid fa-chess-queen text-5xl absolute  top-4 right-4"></i>
-                        <h3 className="font-semibold text-5xl leading-tight">
+                    <div className="w-32 h-36 xs:w-48 xs:h-56 rounded-3xl col-span-2 place-self-center lg:col-span-1 border-4 xs:border-8 border-white bg-[#1A1363] flex flex-col justify-center items-center relative gap-4">
+                        <i class="fa-solid fa-chess-queen text-5xl absolute  top-[9%] right-[9%]"></i>
+                        <h3 className="font-semibold text-4xl xs:text-5xl leading-tight">
                             1<br />
                             Year
                         </h3>
-                        <span className="font-semibold">Annual Rate</span>
+                        <span className="font-semibold -m-3">Annual Rate</span>
                     </div>
                 </div>
             </div>
@@ -211,7 +212,7 @@ export const Homepage = () => {
                 <div className=" w-full flex flex-col md:flex-row items-center gap-[14vmax] justify-around pt-24 p-8">
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]  rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach} alt='img' className="h-full" />
+                            <img src={coach} className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach John
@@ -219,7 +220,7 @@ export const Homepage = () => {
                     </div>
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]    rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach2} alt='img' className="h-full" />
+                            <img src={coach2} className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach Martell
@@ -227,7 +228,7 @@ export const Homepage = () => {
                     </div>
                     <div className="h-[30vmax] w-[30vmax] md:h-[26vmax] md:w-[24vmax] relative rounded-2xl bg-[#B8B3EC] pt-20">
                         <div className="w-[12vmax] h-[12vmax] md:w-[10vmax] md:h-[10vmax]   rounded-full absolute -top-[6vmax] left-[9vmax] md:-top-[5vmax] md:left-[7vmax] bg-white ">
-                            <img src={coach} alt='img' className="h-full" />
+                            <img src={coach} className="h-full" />
                         </div>
                         <div className="text-[1.6vmax] font-semibold text-[#1A1363]">
                             Coach Ansel
@@ -240,10 +241,10 @@ export const Homepage = () => {
                 Last Section 
             */}
 
-            <div className="w-full p-10" style={{ backgroundImage: `url(${lastSecBgImg})` }}>
+            <div className="w-full p-6" style={{ backgroundImage: `url(${lastSecBgImg})` }}>
                 <div className="flex items-center justify-center">
                     <div className="hidden md:inline-block">
-                        <img src={map} alt='img' />
+                        <img src={map} />
                     </div>
                     <div>
                         <div className="text-[#1a1363] text-4xl text-wrap font-semibold text-center ">
@@ -294,17 +295,17 @@ export const Homepage = () => {
                             </div>
                         </div>
                         <div className="flex justify-around mt-6">
-                            <Link className="bg-[#DEBA3B] py-2 px-6 rounded-3xl">Submit</Link>
-                            <Link className="bg-[#FFFADF] py-2 px-6 rounded-3xl">Clear Enteries</Link>
+                            <Link className="bg-[#DEBA3B] hover:bg-[#f3e595]  py-2 px-6 rounded-3xl">Submit</Link>
+                            <Link className="bg-[#FFFADF] hover:bg-[#f3e595]  py-2 px-6 rounded-3xl">Clear Enteries</Link>
                         </div>
                     </div>
 
                     <div className="hidden lg:inline-block">
                         <div className="text-[#DEBA3B] text-3xl font-semibold mt-6 pl-6">Customer’s Progress </div>
                         <div className="flex h-64">
-                            <img src={progress2} alt='img'/>
-                            <img src={progress3} alt='img'/>
-                            <img src={progress1} alt='img'/>
+                            <img src={progress2} />
+                            <img src={progress3} />
+                            <img src={progress1} />
                         </div>
                     </div>
                 </div>
@@ -315,8 +316,8 @@ export const Homepage = () => {
             */}
 
             <div className="w-full p-10 bg-white flex  text-lg  gap-[14vmax]">
-                <div className="flex flex-col gap-1">
-                    <h2 className="text-2xl font-semibold">GYM</h2>
+                <div className="flex flex-col gap-1 ">
+                    <h2 className="text-2xl font-semibold ">GYM</h2>
                     <Link>Why Join Us</Link>
                     <Link>About</Link>
                     <Link>Plan</Link>
