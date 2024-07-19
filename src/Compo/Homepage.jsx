@@ -34,6 +34,7 @@ export const Homepage = () => {
     }
 
     return (
+        
         <div className="w-full">
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
@@ -55,7 +56,7 @@ export const Homepage = () => {
                         return (
                             <Link
                                 className="py-3 px-6 text-[1.2vmax] font-bold rounded-[30px] hover:bg-[#FDEE21] focus:bg-[#FDEE21]"
-                                to="/" onClick={()=>setNav(false)}
+                                to="/dashboard" onClick={()=>setNav(false)}
                                 key={index}
                             >
                                 {item}

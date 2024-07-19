@@ -11,31 +11,33 @@ import Register from './Components/Register';
 import Registration from './Components/Registration';
 import Plan from './Components/Plan';
 import { Homepage } from "./Compo/Homepage";
+import { Dashboard } from "./Components/Dashboard";
 function App() {
   return (
-    <div className="App">
+    <div className='flex'>
     <Router>
+    <SideBar/>
+    {/* <Homepage/> */}
     {/* <AdminInfo/> */}
     {/* <Payment/> */}
-    {/* <SideBar/> */}
-    {/* <AddEquipment/> */}
-    {/* <ActiveMember/> */}
+    {/* <ActiveMember/>  */}
     {/* <ActiveCoach/> */}
+    {/* <AddEquipment/> */}
     {/* <SalesReport/> */}
     {/* <Login/> */}
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>
-        <Route path='/' element={<Homepage/>}/>
           <Route path='/admin' element={<AdminInfo/>}/>
           <Route path='/payment' element={<Payment/>}/>
           <Route path='/members' element={<ActiveMember/>}/>
           <Route path='/coach' element={<ActiveCoach/>}/>
-          <Route path='/equipment' element={<AddEquipment/>}/>
           <Route path='/sales' element={<SalesReport/>}/>
           <Route path='/register' element={<Registration/>}/>
+          <Route path='/equipment' element={<AddEquipment/>}/>
           <Route path='/plan' element={<Plan/>}/>
-          {/* <Route path='/' element={}/> */}
+          <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/' element={<Homepage/>}/>
         </Routes>
     </Router>
     </div>
