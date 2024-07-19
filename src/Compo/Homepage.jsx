@@ -55,7 +55,7 @@ export const Homepage = () => {
                         return (
                             <Link
                                 className="py-3 px-6 text-[1.2vmax] font-bold rounded-[30px] hover:bg-[#FDEE21] focus:bg-[#FDEE21]"
-                                to="/" onClick={()=>setNav(false)}
+                                to="/dashboard" onClick={()=>setNav(false)}
                                 key={index}
                             >
                                 {item}
