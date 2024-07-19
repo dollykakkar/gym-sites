@@ -1,4 +1,4 @@
-import {BrowserRouter as Router ,Route,Routes,Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import SideBar from './Components/SideBar';
 import Payment from './Components/Payment';
 import AdminInfo from './Components/AdminInfo';
@@ -39,8 +39,8 @@ function App() {
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='/' element={<Homepage/>}/>
         </Routes>
-    </Router>
-    </div>
+      </Router>
+    </>
   );
 }
 
