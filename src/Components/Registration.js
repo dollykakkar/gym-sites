@@ -1,11 +1,12 @@
-import React from 'react'
-import img2 from './img/img2png.png'
-import notifi from './img/notification.png'
+import React from "react";
+import img2 from "./img/img2png.png";
+import SideBar from "./SideBar";
+import notifi from "./img/notification.png";
 const Registration = () => {
   return (
-    < div className='w-full p-2 min-h-screen bg-[#ECE9E9] grid content-start gap-6'>
-
-
+    <>
+    <SideBar/>
+    <div className="w-full p-10 min-h-screen bg-[#ECE9E9] grid content-start gap-6">
       {/* <div className='h-[750px] w-[580px] bg-[#ECE9E9] ml-[250px]  pt-[20px]'>
             <div class='w-[580px] h-[100px] bg-[#ECE9E9] flex mt-   [20px]'>
                 <div class='flex w-[152px]  ml-[40px] pr-[10px]'>
@@ -43,58 +44,76 @@ const Registration = () => {
       Edited Code
       */}
 
-
-<div className=" w-full h-[76px] flex justify-center lg:justify-between text-[#1a1363]">
-        <div className='flex items-center'>
+      <div className=" w-full h-[76px] flex justify-center lg:justify-between text-[#1a1363]">
+        <div className="flex items-center">
           <img src={img2} className="h-[100%]" />
           <h1 className="hidden  lg:block text-lg leading-none font-semibold">
             STAMINA
             <br />
             FITNESS
           </h1>
-
         </div>
-        <div className='hidden lg:flex gap-2 items-center pr-2 '>
+        <div className="hidden lg:flex gap-2 items-center pr-2 ">
           <span>Feedback</span>
-          <span><i class="fa-solid fa-bell"></i></span>
+          <span>
+            <i class="fa-solid fa-bell"></i>
+          </span>
         </div>
       </div>
 
-      <div className='flex flex-col gap-3 pl-2'>
-        <div class='text-[#DEBA3B] text-3xl font-bold'>Become a Member</div>
-        <div class='text-[#1A1363] text-4xl font-medium '>Register</div>
-        <div className='p-6 grid md:grid-col-2 gap-4 bg-white text-md font-bold rounded-2xl'>
-          <div className='flex flex-col'>
+      <div className="flex flex-col gap-3 ">
+        <div class="text-[#DEBA3B] text-3xl font-bold">Become a Member !</div>
+        <div class="text-[#1A1363] text-4xl font-medium ">Register</div>
+        <div className="p-10 grid md:grid-col-2 gap-4 bg-white text-md font-bold rounded-2xl">
+          <div className="flex flex-col">
             <label>Name of Participant</label>
-            <input className='bg-[#E9E9E9] rounded-xl h-8'></input>
+            <input className="bg-[#E9E9E9] rounded-xl h-8"></input>
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col">
             <label>Date of Join</label>
-            <input type='date' className='bg-[#E9E9E9] w-full rounded-xl h-8'></input>
+            <input
+              type="date"
+              className="bg-[#E9E9E9] w-full rounded-xl h-8"
+            ></input>
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col">
             <label>Email</label>
-            <input type='email' className='bg-[#E9E9E9] rounded-xl h-8'></input>
+            <input type="email" className="bg-[#E9E9E9] rounded-xl h-8"></input>
           </div>
-          <div className='flex flex-col'>
+          <div className="flex flex-col">
             <label>Contact No.</label>
-            <input type='number' className='bg-[#E9E9E9] rounded-xl w-full border-none h-8'></input>
+            <input
+              type="number"
+              className="bg-[#E9E9E9] rounded-xl w-full border-none h-8"
+            ></input>
           </div>
-          <div className='flex gap-2'>
-            <div className='flex flex-col'>
+          <div className="flex gap-2">
+            <div className="flex flex-col">
               <label>plan</label>
-              <input type='number' className='bg-[#E9E9E9] rounded-xl w-full border-none h-8'></input>
+              <input
+                type="number"
+                className="bg-[#E9E9E9] rounded-xl w-full border-none h-8"
+              ></input>
             </div>
-            <div className='flex flex-col'>
+            <div className="flex flex-col">
               <label>price</label>
-              <input type='number' className='bg-[#E9E9E9] rounded-xl w-full border-none h-8'></input>
+              <input
+                type="number"
+                className="bg-[#E9E9E9] rounded-xl w-full border-none h-8"
+              ></input>
             </div>
-
+          </div>
+          <div className='flex justify-end gap-4'>
+            <button className="text-white bg-[#1A1363] rounded-lg px-8 py-1">
+              Avail Membership
+            </button>
+            <button className='text-[#1A1363] rounded-lg border-2 border-[#1A1363] px-4 py-1'>Cancel</button>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+    </>
+  );
+};
 
-export default Registration
+export default Registration;

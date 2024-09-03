@@ -1,12 +1,12 @@
-import React from 'react'
-import SideBar from './SideBar'
-import img2 from './img/img2png.png'
-import notifi from './img/notification.png'
+import React from "react";
+import SideBar from "./SideBar";
+import img2 from "./img/img2png.png";
+import notifi from "./img/notification.png";
 const Payment = () => {
   return (
-    <div className='w-full flex flex-col gap-2 p-2 min-h-screen bg-[#ECE9E9] '>
-
-
+    <>
+    <SideBar/>
+    <div className="w-full flex flex-col gap-2 p-10  min-h-screen bg-[#ECE9E9] ">
       {/* <div className='h-[750px] w-[580px] bg-[#ECE9E9]'> */}
       {/* <div class='w-[580px] h-[100px] bg-[#ECE9E9] flex mt-[20px]'>
                 <div class='flex w-[152px]  ml-[40px] pr-[10px]'>
@@ -38,45 +38,59 @@ const Payment = () => {
             </div> */}
       {/* </div> */}
 
-
       <div className=" w-full h-[76px] flex justify-center lg:justify-between text-[#1a1363]">
-        <div className='flex items-center'>
+        <div className="flex items-center">
           <img src={img2} className="h-[100%]" />
           <h1 className="hidden  lg:block text-lg leading-none font-semibold">
             STAMINA
             <br />
             FITNESS
           </h1>
-
         </div>
-        <div className='hidden lg:flex gap-2 items-center pr-2 '>
+        <div className="hidden lg:flex gap-2 items-center pr-2 ">
           <span>Feedback</span>
-          <span><i class="fa-solid fa-bell"></i></span>
+          <span>
+            <i class="fa-solid fa-bell"></i>
+          </span>
         </div>
       </div>
 
-      <div className='text-[#DEBA3B] text-3xl font-bold'>Point of Sale</div>
-      <div className='text-[#1A1363] text-4xl font-medium '>Add Payment</div>
-      <div className='p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white text-md rounded-xl font-bold'>
-        <div className='flex flex-col'>
+      <div className="text-[#DEBA3B] text-3xl font-bold">Point of Sale</div>
+      <div className="text-[#1A1363] text-4xl font-medium ">Add Payment</div>
+      <div className="p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white text-md rounded-xl font-bold">
+        <div className="flex flex-col">
           <label>Name of Member</label>
-          <input className='bg-[#E9E9E9] rounded-xl h-8'></input>
+          <input className="bg-[#E9E9E9] rounded-xl h-8"></input>
         </div>
-        <div className='flex flex-col'>
+        <div className="flex flex-col">
           <label>Plan</label>
-          <input className='bg-[#E9E9E9] rounded-xl h-8'></input>
+          <input className="bg-[#E9E9E9] rounded-xl h-8"></input>
         </div>
-        <div className='flex flex-col'>
+        <div className="flex flex-col">
           <label>Price</label>
-          <input className='bg-[#E9E9E9] rounded-xl h-8'></input>
+          <input className="bg-[#E9E9E9] rounded-xl h-8"></input>
         </div>
-        <div className='flex flex-col'>
+        <div className="flex flex-col">
           <label>Date of Join</label>
-          <input type='date' className='bg-[#E9E9E9] rounded-xl w-full border-none h-8'></input>
+          <input
+            type="date"
+            className="bg-[#E9E9E9] rounded-xl w-full border-none h-8"
+          ></input>
+        </div>
+        <div>
+          <div className="flex justify-end gap-4">
+            <button class=" bg-[#1A1363] text-white rounded-lg px-4 py-1">
+              Save
+            </button>
+            <button class="text-[#1A1363] rounded-lg border-2 border-[#1A1363] px-4 py-1">
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    </>
   );
-}
+};
 
-export default Payment
+export default Payment;

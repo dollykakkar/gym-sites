@@ -7,7 +7,9 @@ import arrow from './img/down.png'
 import check from './img/JournalCheck.png'
 const SalesReport = () => {
   return (
-    < div className='w-full p-2 min-h-screen bg-[#ECE9E9] '>
+    <>
+    <SideBar/>
+    < div className='w-full px-10 py-2 min-h-screen bg-[#ECE9E9] '>
 
       {/* 
        */}
@@ -207,6 +209,7 @@ const SalesReport = () => {
       </div>
 
     </div>
+    </>
   )
 }
 

@@ -12,11 +12,11 @@ import Registration from './Components/Registration';
 import Plan from './Components/Plan';
 import { Homepage } from "./Compo/Homepage";
 import { Dashboard } from "./Components/Dashboard";
+
 function App() {
   return (
     <div className='flex'>
     <Router>
-    <SideBar/>
     {/* <Homepage/> */}
     {/* <AdminInfo/> */}
     {/* <Payment/> */}
@@ -28,6 +28,7 @@ function App() {
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>
+    <Route path='/sideBar' element={<SideBar/>}/>
           <Route path='/admin' element={<AdminInfo/>}/>
           <Route path='/payment' element={<Payment/>}/>
           <Route path='/members' element={<ActiveMember/>}/>
@@ -38,6 +39,8 @@ function App() {
           <Route path='/plan' element={<Plan/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='/' element={<Homepage/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signin' element={<Register/>}/>
         </Routes>
       </Router>
     </div>

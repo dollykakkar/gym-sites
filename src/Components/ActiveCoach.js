@@ -6,7 +6,9 @@ import search from './img/Vector.png'
 import arrow from './img/down.png'
 const ActiveCoach = () => {
   return (
-    < div className='w-full p-2 min-h-screen bg-[#ECE9E9] '>
+    <>
+    <SideBar/>
+    < div className='w-full p-6 min-h-screen bg-[#ECE9E9] '>
 
       {/* <div className='h-[750px] w-[580px] bg-[#ECE9E9] ml-[250px] pt-[20px]'>
         <div class='w-[580px] h-[100px] bg-[#ECE9E9] flex'>
@@ -91,7 +93,7 @@ const ActiveCoach = () => {
           </h1>
 
         </div>
-        <div className='hidden lg:flex gap-2 items-center pr-2 '>
+        <div className='hidden lg:flex gap-2 items-center '>
           <span>Feedback</span>
           <span><i class="fa-solid fa-bell"></i></span>
         </div>
@@ -144,11 +146,10 @@ const ActiveCoach = () => {
               <button class=' bg-[#666385] rounded-xl py-2 px-4 text-sm'>Next</button>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
+    </>
   )
 }
 

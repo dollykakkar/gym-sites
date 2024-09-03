@@ -1,9 +1,12 @@
 import React from 'react'
 import img2 from './img/img2png.png'
+import SideBar from './SideBar'
 
 export const Dashboard = () => {
     return (
-        <div className='w-full flex flex-col gap-2 p-2 min-h-screen bg-[#ECE9E9] '>
+        <>
+        <SideBar/>
+        <div className='w-full flex flex-col gap-2 p-10 min-h-screen bg-[#ECE9E9] '>
             <div className=" w-full h-[76px] flex justify-center lg:justify-between text-[#1a1363]">
         <div className='flex items-center'>
           <img src={img2} className="h-[100%]" />
@@ -125,5 +128,6 @@ export const Dashboard = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }

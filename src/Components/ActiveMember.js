@@ -6,7 +6,9 @@ import search from './img/Vector.png'
 import arrow from './img/down.png'
 const ActiveMember = () => {
     return (
-        < div className='w-full p-2 min-h-screen bg-[#ECE9E9] '>
+        <>
+        <SideBar/>
+        < div className='w-full p-10 min-h-screen bg-[#ECE9E9] '>
 
             {/* <div className='h-[750px] w-[580px] bg-[#ECE9E9] pt-[20px] -mt-[75'>
                 <div class='w-[580px] h-[100px] bg-[#ECE9E9] flex'>
@@ -96,12 +98,12 @@ const ActiveMember = () => {
           </h1>
 
         </div>
-        <div className='hidden lg:flex gap-2 items-center pr-2 '>
+        <div className='hidden lg:flex gap-5 items-center pr-2 '>
           <span>Feedback</span>
           <span><i class="fa-solid fa-bell"></i></span>
         </div>
       </div>
-            <h2 className='text-[#1A1363] text-3xl font-bold '>
+            <h2 className='text-[#1A1363] text-3xl font-bold mb-5 '>
                 Active Members
             </h2>
             <div className=' bg-[#77749B] shadow-xl rounded-2xl p-6 flex flex-col gap-3'>
@@ -167,11 +169,9 @@ const ActiveMember = () => {
                         <button class=' bg-[#666385] rounded-xl py-2 px-4 text-sm'>Next</button>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
+        </>
     )
 }
 

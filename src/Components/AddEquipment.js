@@ -5,6 +5,7 @@ import search from './img/Vector.png'
 import arrow from './img/down.png'
 import img from './img/PencilSquare.png'
 import { useState } from 'react';
+import SideBar from './SideBar'
 const AddEquipment = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -12,7 +13,9 @@ const AddEquipment = () => {
     setIsVisible(!isVisible);
   };
   return (
-    < div className='w-full p-4 min-h-screen bg-[#ECE9E9] flex flex-col gap-6 items-start relative'>
+    <>
+    <SideBar/>
+    < div className='w-full p-10 min-h-screen bg-[#ECE9E9] flex flex-col gap-6 items-start relative'>
 
 
       {/* <div className='h-[750px] w-[580px] bg-[#ECE9E9] ml-[250px]  pt-[20px]'>
@@ -228,6 +231,7 @@ const AddEquipment = () => {
           </div>
         </div>
       </div>
+      </>
   )
 }
 

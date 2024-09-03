@@ -7,7 +7,9 @@ import arrow from './img/down.png'
 import img from './img/PencilSquare.png'
 const Plan = () => {
   return (
-    < div className='w-full px-6 py-2 min-h-screen bg-[#ECE9E9] flex flex-col gap-6 items-start'>
+    <>
+    <SideBar/>
+    < div className='w-full p-10  min-h-screen bg-[#ECE9E9] flex flex-col gap-6 items-start'>
 
 
       {/* 
@@ -123,11 +125,11 @@ const Plan = () => {
       </button>
 
 
-      <div className='w-full bg-[#332F64] rounded-2xl shadow-lg p-4 flex flex-col gap-4'>
-        <div className='flex gap-4'>
-          <div className='w-full grid'>
-            <label className='font-poppins text-white font-bold'> Plan Name</label>
-            <input className='bg-[#E9E9E9] rounded-xl w-full h-8' />
+      <div className='w-full bg-[#332F64] rounded-2xl shadow-lg p-10  flex flex-col gap-4'>
+        <div className='flex gap-6 '>
+          <div className='w-full grid  '>
+            <label className='font-poppins text-white mv-4 font-bold'> Plan Name</label>
+            <input className='bg-[#E9E9E9] rounded-xl w-full h-8 ' />
           </div>
           <div className='w-full grid'>
             <label className='font-poppins text-white font-bold'>Validity</label>
@@ -207,6 +209,7 @@ const Plan = () => {
         </div>
 
     </div>
+    </>
   )
 }
 
