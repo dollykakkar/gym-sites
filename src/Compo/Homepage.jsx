@@ -16,6 +16,7 @@ import map from '../Img/map.png'
 import progress1 from '../Img/progress1.png'
 import progress2 from '../Img/progress2.png'
 import progress3 from '../Img/progress3.png'
+import { navbar } from "./naviteam";
 
 
 
@@ -35,7 +36,8 @@ export const Homepage = () => {
     }
 
     return (
-        <div className="w-full ">
+
+     <div className="w-full h-screen z-10">
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
                 <div className="h-[76px] flex">
@@ -52,14 +54,14 @@ export const Homepage = () => {
                 </div>
                 <div className={` ${!nav ? " hidden md:flex gap-2" : "flex flex-col w-2/3 gap-6 absolute top-full right-2 p-4 rounded-b-xl bg-white"}`}>
 
-                    {navItem.map((item, index) => {
+                    {navbar.map((item, index) => {
                         return (
                             <Link
                                 className="py-3 px-6 text-[1.2vmax] font-bold rounded-[30px] hover:bg-[#FDEE21] focus:bg-[#FDEE21]"
-                                to="/" onClick={()=>setNav(false)}
+                                to={`${item.path}`} onClick={()=>setNav(false)}
                                 key={index}
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         );
                     })}
@@ -90,7 +92,7 @@ export const Homepage = () => {
             {/* Third section 
                 What We Offer */}
 
-            <div className="w-full relative md:h-[710px] bg-no-repeat bg-right-bottom bg-gradient-to-r from-[#1A1363] via-[#1A1363] to-[#1a13637a] grid ">
+            <div className="w-full relative md:h-[710px] bg-no-repeat bg-right-bottom bg-gradient-to-r mix-blend-color from-[#1A1363] via-[#1A1363] to-[#1a13637a] shadow-2xl">
                 <div className="flex flex-col items-center text-white">
                     <span className="text-lg">About</span>
                     <span className="text-[4vmax] md:text-[3vmax] text-center tracking-widest font-bold">
