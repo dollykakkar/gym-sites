@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Img/logoWhite.png";
@@ -35,7 +36,8 @@ export const Homepage = () => {
     }
 
     return (
-        <div className="w-full h-screen z-10">
+
+     <div className="w-full h-screen z-10">
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
                 <div className="h-[76px] flex">
