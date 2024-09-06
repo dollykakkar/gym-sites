@@ -6,22 +6,22 @@ export const Dashboard = () => {
     return (
         <>
         <SideBar/>
-        <div className='w-full flex flex-col gap-2 p-10 min-h-screen bg-[#ECE9E9] '>
+        <div className='w-full flex flex-col gap-2  p-2 px-10 min-h-screen bg-[#ECE9E9] '>
             <div className=" w-full h-[76px] flex justify-center lg:justify-between text-[#1a1363]">
-        <div className='flex items-center'>
-          <img src={img2} className="h-[100%]" />
-          <h1 className="hidden  lg:block text-lg leading-none font-semibold">
-            STAMINA
-            <br />
-            FITNESS
-          </h1>
+                <div className='flex items-center'>
+                    <img src={img2} className="h-[100%]" />
+                    <h1 className="hidden  lg:block text-lg leading-none font-semibold">
+                        STAMINA
+                        <br />
+                        FITNESS
+                    </h1>
 
-        </div>
-        <div className='hidden lg:flex gap-2 items-center pr-2 '>
-          <span>Feedback</span>
-          <span><i class="fa-solid fa-bell"></i></span>
-        </div>
-      </div>
+                </div>
+                <div className='hidden lg:flex gap-2 items-center pr-2 '>
+                    <span>Feedback</span>
+                    <span><i class="fa-solid fa-bell"></i></span>
+                </div>
+            </div>
 
             <div className='flex flex-col gap-6 lg:flex-row' >
                 <div className='lg:w-2/3 flex flex-col gap-6'>
@@ -104,11 +104,11 @@ export const Dashboard = () => {
 
                             </div>
                             <div className='sm:w-1/2 text-white font-bold text-sm'>
-                            <div className='flex justify-between '>
-                                <span>Date paid</span>
-                                <span>Date Expiary</span>
-                                <span>Status</span>
-                            </div>
+                                <div className='flex justify-between '>
+                                    <span>Date paid</span>
+                                    <span>Date Expiary</span>
+                                    <span>Status</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export const Dashboard = () => {
                         Inventory
                     </h2>
                     <div className='bg-white rounded-xl shadow-xl w-full h-80 p-4 '>
-                       
+
                     </div>
 
                 </div>

@@ -16,7 +16,6 @@ import map from '../Img/map.png'
 import progress1 from '../Img/progress1.png'
 import progress2 from '../Img/progress2.png'
 import progress3 from '../Img/progress3.png'
-import { navbar } from "./naviteam";
 
 
 
@@ -36,8 +35,7 @@ export const Homepage = () => {
     }
 
     return (
-
-     <div className="w-full h-screen z-10">
+        <div className="w-full ">
             {/* NAVBAR */}
             <div className="w-full  flex justify-between px-8 items-center relative bg-[#ffffff] text-[#1A1363]">
                 <div className="h-[76px] flex">
@@ -54,14 +52,15 @@ export const Homepage = () => {
                 </div>
                 <div className={` ${!nav ? " hidden md:flex gap-2" : "flex flex-col w-2/3 gap-6 absolute top-full right-2 p-4 rounded-b-xl bg-white"}`}>
 
-                    {navbar.map((item, index) => {
+                    {navItem.map((item, index) => {
                         return (
                             <Link
-                                className="py-3 px-6 text-[1.2vmax] font-bold rounded-[30px] hover:bg-[#FDEE21] focus:bg-[#FDEE21]"
-                                to={`${item.path}`} onClick={()=>setNav(false)}
+                                
+                                className="py-3 px-6 text-[1.2vmax] font-bold rounded-[30px] hover:bg-[#FDEE21] focus:bg-[#FDEE21] "
+                                to="/dashboard" onClick={()=>setNav(false)}
                                 key={index}
                             >
-                                {item.name}
+                                {item}
                             </Link>
                         );
                     })}
@@ -70,8 +69,8 @@ export const Homepage = () => {
             </div>
             {/* First Section */}
             <div
-                className="w-full flex flex-col md:flex-row justify-center items-center bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${gymImg})` }}
+                className="w-full flex flex-col md:flex-row justify-center items-center shadowbox bg-no-repeat bg-cover"
+            style={{ backgroundImage:`url(${gymImg})`}}
             >
                 <div className="order-2 w-80 pb-10 flex flex-col items-start">
                     <div className=" mb-7 text-left">
@@ -92,7 +91,7 @@ export const Homepage = () => {
             {/* Third section 
                 What We Offer */}
 
-            <div className="w-full relative md:h-[710px] bg-no-repeat bg-right-bottom bg-gradient-to-r mix-blend-color from-[#1A1363] via-[#1A1363] to-[#1a13637a] shadow-2xl">
+            <div className="w-full relative md:h-[710px] bg-no-repeat bg-right-bottom bg-gradient-to-r from-[#1A1363] via-[#1A1363] to-[#1a13637a] grid ">
                 <div className="flex flex-col items-center text-white">
                     <span className="text-lg">About</span>
                     <span className="text-[4vmax] md:text-[3vmax] text-center tracking-widest font-bold">
@@ -104,7 +103,7 @@ export const Homepage = () => {
                         <img src={thirdsecPerson} />
                     </div>
                     <div className="flex flex-col mt-6 justify-center md:justify-start items-center md:items-start">
-                        <h3 className="text-sm xs:text-lg xs:text-wrap md:w-96 text-[#FFFF7D] text-center  md:text-left px-6 md:px-0 font-semibold">
+                        <h3 className="text-sm xs:text-lg xs:text-wrap md:w-[500px] text-[#FFFF7D] text-center  md:text-left px-6 md:px-0 font-semibold">
                             Stamina Gym Fitness Center provides proper training and
                             conditioning for members who want to improve and transform their
                             body with Program depend on the body composition.

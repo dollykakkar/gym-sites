@@ -1,2 +1,2 @@
 
-export  const navbar = [{ name:"Home" ,path:'/'},{name:"why join us",path:'/sales'},{name:"plan",path:'/plan'},{name:"coaches",path:'/coach'},{name:"visit our gym",path:'/admin'},{name:"register",path:'/register'}];
+// export  const navbar = [{ name:"Home" ,path:'/'},{name:"why join us",path:'/sales'},{name:"plan",path:'/plan'},{name:"coaches",path:'/coach'},{name:"visit our gym",path:'/admin'},{name:"register",path:'/register'}];
