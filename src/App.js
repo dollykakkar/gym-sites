@@ -12,11 +12,14 @@ import Registration from './Components/Registration';
 import Plan from './Components/Plan';
 import { Homepage } from "./Compo/Homepage";
 import { Dashboard } from "./Components/Dashboard";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <div className='flex'>
-    <Router>
+    <Router>  
+          <ToastContainer/>
     {/* <Homepage/> */}
     {/* <AdminInfo/> */}
     {/* <Payment/> */}
@@ -24,11 +27,14 @@ function App() {
     {/* <ActiveCoach/> */}
     {/* <AddEquipment/> */}
     {/* <SalesReport/> */}
-    {/* <Login/> */}
+    {/* <Login/> */} 
     {/* <Register/> */}
     {/* <Registration/> */}
         <Routes>
-    <Route path='/sideBar' element={<SideBar/>}/>
+          
+          <Route path='/' element={<Homepage/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Register/>}/>
           <Route path='/admin' element={<AdminInfo/>}/>
           <Route path='/payment' element={<Payment/>}/>
           <Route path='/members' element={<ActiveMember/>}/>
@@ -38,13 +44,9 @@ function App() {
           <Route path='/equipment' element={<AddEquipment/>}/>
           <Route path='/plan' element={<Plan/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
-          <Route path='/' element={<Homepage/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/signin' element={<Register/>}/>
         </Routes>
       </Router>
     </div>
   );
 }
-
 export default App;
