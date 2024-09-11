@@ -18,8 +18,11 @@ const Login = () => {
     try {
       const res = await axios.post("http://localhost:5000/login", userData)
       // toast("res=>",res);
+      const {message,token} = res.data
       console.log("res=>", res)
-      toast.success(res.data)
+      console.log("token=>",token);
+      localStorage.setItem("token",token);
+      toast.success(message)
     } catch (error) {
       console.log("error=>", error)
       toast.error("error");

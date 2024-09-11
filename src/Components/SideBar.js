@@ -1,16 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import img from "./img/PersonCircle.png";
 import { useState } from "react";
 
 
 const SideBar = () => {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
+  const logOut = () => {
+    toggleSidebar();
+    localStorage.removeItem('token');
+    navigate("/login")
+  }
   const menuItem = [
     {
       path: "/dashboard",
@@ -86,7 +92,7 @@ const SideBar = () => {
             <Link
               to={item.path}
               key={index}
-              class="w-full hover:bg-[#ECE9E9] text-xl  hover:text-[#1A1363] focus:text-[#1a1363] focus:bg-[#ECE9E9] text-white flex p-2 lg:pl-6 rounded-l-3xl gap-3"
+              class="w-full hover:bg-[#ECE9E9] text-xl  hover:text-[#1A1363] focus:text-[#1a1363]  focus:bg-[#ECE9E9] a text-white flex p-2 lg:pl-6 rounded-l-3xl gap-3"
               onClick={toggleSidebar}
             >
 
@@ -97,7 +103,7 @@ const SideBar = () => {
           ))}
         </div>
 
-        <Link to='/' className="w-full hover:bg-[#ECE9E9] mt-20 text-xl hover:text-[#1A1363] text-white flex  p-2 lg:pl-6 ml-6  rounded-l-3xl items-center  gap-3 " onClick={toggleSidebar}>
+        <Link to='/' className="w-full hover:bg-[#ECE9E9] mt-20 text-xl hover:text-[#1A1363] text-white flex  p-2 lg:pl-6 ml-6  rounded-l-3xl items-center  gap-3 " onClick={logOut}>
           <span class="fa-solid fa-right-from-bracket"></span><span>Logout</span>
         </Link>
       </div>
